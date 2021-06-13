@@ -1,0 +1,131 @@
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+.logos {
+    position: absolute;
+    right: 0;
+}
+
+.list-group-item {
+    color: white !important;
+    border-color: #1a1a19 !important;
+    ;
+}
+
+.list-group-item:hover {
+    background-color: #c5960a !important;
+}
+
+a.active {
+    background-color: var(--bs-warning) !important;
+    color: var(--bs-dark) !important;
+    font-weight: bold;
+}
+
+li.active2 {
+    background-color: #5cb85c;
+    border-radius: 5px;
+}
+
+li.active2:hover {
+    background-color: #408340;
+    border-radius: 5px;
+}
+
+div ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+div ul li a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+}
+
+div ul li a:hover {
+    background: #408340;
+    color: black;
+    border-radius: 5px;
+}
+
+div ul ul {
+    position: static;
+    display: none;
+}
+
+div ul .feat-show.show {
+    display: block;
+}
+
+div ul .cli-show.show {
+    display: block;
+}
+
+div ul .feap-show.show {
+    display: block;
+}
+
+div ul ul li {
+    line-height: 42px;
+    border-top: none;
+}
+
+div ul ul li a {
+    font-size: 15px;
+    color: #e6e6e6;
+    padding-left: 10px;
+}
+
+div ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.bot {
+    cursor: pointer !important;
+}
