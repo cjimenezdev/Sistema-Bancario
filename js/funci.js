@@ -24,7 +24,7 @@ var getData = function() {
                         alert("Bienvenido" + " " + name);
                         document.getElementById("name").value = "";
                         document.getElementById("passw").value = "";
-                        window.location = 'home.php';
+                        window.location = 'home.html';
                     }
                 }
             }
